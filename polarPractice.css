@@ -1,0 +1,17 @@
+.eqxn {
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin: auto;
+    transform: transition(0, 50%);
+    font-size: 30px;
+    font-family: Roboto;
+}
+
+.calculator {
+    background: gray;
+    left: 50%;
+    margin: auto;
+}
