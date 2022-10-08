@@ -51,18 +51,18 @@ function randomRose() { //generates a polar equation for a random rose
     let chooseB1 = chooseB();
     let chooseB2 = chooseB();
     if ((chooseB1 == 1 || chooseB1 == 0) && chooseB2 == 1) {
-        return chooseSign(true) + chooseFunction() + "\u03B8";
+        return chooseFunction() + "\u03B8";
     }
 
     if (chooseB1 == 1 || chooseB1 == 0) {
-        return chooseSign(true) + chooseFunction() + chooseB2 + "\u03B8";
+        return chooseFunction() + chooseB2 + "\u03B8";
     }
 
     if (chooseB2 == 1) {
-        return chooseSign(true) + chooseB1 + chooseFunction() + "\u03B8";
+        return chooseB1 + chooseFunction() + "\u03B8";
     }
 
-    return chooseSign(true) + chooseB1 + chooseFunction() + chooseB2 + "\u03B8";
+    return chooseB1 + chooseFunction() + chooseB2 + "\u03B8";
 }
 
 function chooseRandomFn() { //chooses a random polar function (currently roses (r=asinntheta/acosntheta) and lemniscates (r=a+bcostheta/a+bsintheta))
